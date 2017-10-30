@@ -1,0 +1,5 @@
+spring:
+  application.name: instrument-value
+  batch:
+    job.enabled: false
+    initializer.enabled: false

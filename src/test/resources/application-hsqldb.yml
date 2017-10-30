@@ -1,0 +1,6 @@
+spring.profiles.include: test
+db.INSTRUMENT:
+  url: jdbc:hsqldb:mem:instrument
+spring.jpa.generate-ddl: true
+
+instrument.file.path: "exemple_input.txt"
