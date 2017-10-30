@@ -1,4 +1,4 @@
-package com.test;
+package com.test.instrumentValue;
 
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
@@ -12,4 +12,6 @@ public class InstrumentValueApplication {
     public static void main(String[] args) {
         SpringApplication.run(InstrumentValueApplication.class, args);
     }
+
+
 }

@@ -1,6 +1,5 @@
 package com.test.instrumentValue;
 
-import com.test.InstrumentValueApplication;
 import com.test.instrumentValue.helper.InstrumentValueJobHelper;
 import org.junit.Test;
 import org.junit.runner.RunWith;

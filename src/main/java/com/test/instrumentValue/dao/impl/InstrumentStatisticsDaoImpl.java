@@ -24,6 +24,16 @@ public class InstrumentStatisticsDaoImpl implements InstrumentStatisticsDao{
     }
 
     @Override
+    public List<InstrumentPriceStatistics> findAll() {
+        TypedQuery<InstrumentPriceStatistics> query = entityManager.createQuery("SELECT statistics from INSTRUMENT_PRICE_STATISTICS statistics", InstrumentPriceStatistics.class);
+        try {
+            return query.getResultList();
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
+
+    @Override
     public void updateStatistics(InstrumentPriceStatistics instrumentPriceStatistics) {
         entityManager.merge(instrumentPriceStatistics);
     }

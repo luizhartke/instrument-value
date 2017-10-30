@@ -1,5 +1,17 @@
+db.INSTRUMENT:
+  url: jdbc:hsqldb:mem:instrument
 spring:
+  datasource:
+    platform: hsqldb
+  jpa:
+    generate-ddl: true
+    database: HSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
   application.name: instrument-value
   batch:
     job.enabled: false
     initializer.enabled: false
+
+instrument.file.path: "exemple_input.txt"

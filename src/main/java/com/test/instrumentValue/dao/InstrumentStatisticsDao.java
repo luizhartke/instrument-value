@@ -8,6 +8,8 @@ public interface InstrumentStatisticsDao {
 
     InstrumentPriceStatistics find(String instrument);
 
+    List<InstrumentPriceStatistics> findAll();
+
     void updateStatistics(InstrumentPriceStatistics instrumentPriceStatistics);
 
     List<InstrumentPriceStatistics> findAditionalInstruments();
